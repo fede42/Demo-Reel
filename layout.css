@@ -63,6 +63,14 @@ body {
   height: 100%;
 }
 
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper {
   float: left;
   width: 100%;
@@ -491,7 +499,9 @@ body {
 .trailer_frame {
   float: none;
   clear: both;
-  width: 100%;
+  width: 56.25%;
+	margin-left: auto;
+	margin-right: auto;
   position: relative;
   padding-bottom: 35%;
   padding-top: 25px;
