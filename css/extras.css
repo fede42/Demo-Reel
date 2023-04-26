@@ -9,3 +9,27 @@ canvas {
 .customContainer {
     max-width: 512px !important;
 }
+
+
+/* Set the default font family to Bebas Neue */
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+/* Change the font family for various Bootstrap elements */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.navbar-nav .nav-link,
+.card-title,
+.card-text,
+.list-group-item {
+    font-family: 'Bebas Neue', sans-serif;
+}
