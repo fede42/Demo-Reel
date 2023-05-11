@@ -1,3 +1,11 @@
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.nav-link{
+    font-size: 16px;
+}
+
 canvas {
     display: block;
     position: fixed;
@@ -12,11 +20,11 @@ canvas {
 
 
 /* Set the default font family to Bebas Neue */
-
+/*
 body {
     font-family: 'Bebas Neue', sans-serif;
 }
-
+*/
 
 /* Change the font family for various Bootstrap elements */
 
