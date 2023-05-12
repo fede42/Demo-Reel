@@ -34,6 +34,9 @@
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+        <!-- 3D Model Viewer -->
+        <script type="module"
+            src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     </head>
 
     <body class="bg-secondary">
@@ -55,7 +58,7 @@
                 <div class="collapse navbar-collapse" id="EpicNavbar">
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index-new.html">Home</a>
+                            <a class="nav-link" href="index-new.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-me.html">About Me</a>
@@ -67,10 +70,12 @@
                             <a class="nav-link" href="demo-reel.html">Demo Reel</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="webgl-demo.html">WebGL Demo</a>
+                            <a class="nav-link" href="webgl-demo.html">WebGL
+                                Demo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="3d-modeling.html">3D Modeling</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="3d-modeling.html">3D Modeling</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact-new.html">Contact</a>
@@ -81,104 +86,21 @@
         </nav>
         <!-- #endregion -->
 
-        <!-- #region IntroCarousel -->
-        <div id="carouselExampleIndicators" class="carousel slide"
-            data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                    class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100"
-                        src="https://via.placeholder.com/1850x500" alt="First
-                        slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Título (Imagen 01)</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://via.placeholder.com/1850x500" alt="Second
-                        slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Título (Imagen 02)</h5>
-                        <p>Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://via.placeholder.com/1850x500" alt="Third
-                        slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Título (Imagen 03)</h5>
-                        <p>Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.</p>
-                    </div>
+        <!-- #region 3D Demo -->
+        <main class="container rounded p-3 mt-3 mb-5">
+            <div class="row">
+                <div class="column">
+                    <h2 class="text-light">3D Modeling</h2>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators"
-                role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators"
-                role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
-        </div>
-
-        <!-- #endregion -->
-
-        <!-- #region Featured Projects -->
-        <section class="container my-5">
-            <h2 class="text-center text-white mb-5">Featured Projects</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200"
-                            class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit.</p>
-                            <a href="#" class="btn btn-primary">More Info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200"
-                            class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="#" class="btn btn-primary">More Info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/300x200"
-                            class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi.</p>
-                            <a href="#" class="btn btn-primary">More Info</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row mt-3">
+                <div class="container-fluid"></div>
+                <model-viewer alt="Pussata" src="assets/Pussata.glb" ar
+                    environment-image="" poster="" shadow-intensity="1"
+                    camera-controls touch-action="pan-y" style=" height:
+                    640px;"></model-viewer>
             </div>
-        </section>
+        </main>
         <!-- #endregion -->
 
         <!-- #region Footer -->
