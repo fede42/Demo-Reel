@@ -18,12 +18,6 @@ canvas {
     max-width: 512px !important;
 }
 
-.model-viewer {
-    width: 100%;
-    height: 25rem;
-    background-color: rgb(231, 231, 231);
-  }
-
 /* Set the default font family to Bebas Neue */
 /*
 body {
