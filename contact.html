@@ -1,159 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Federico Jiménez</title>
-    <link rel="icon" href="images/avatar.png">
+    <link rel="icon" href="images/avatar.png" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
     <!-- Extra CSS -->
-    <link rel="stylesheet" href="css/extras.css">
+    <link rel="stylesheet" href="css/extras.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="bg-secondary">
-    <!-- #region Matrix Background -->
-    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-    <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+  <body class="bg-secondary">
+    <!-- #region Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img
+          src="images/avatar_circle.png"
+          alt="Logo"
+          style="width: 63px; padding-right: 1%"
+        />
+        <a class="navbar-brand" href="index.html">Federico Jiménez</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#EpicNavbar"
+          aria-controls="EpicNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="EpicNavbar">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="demo-reel.html">Demo Reel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webgl-demo.html">WebGL Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="3d-modeling.html">3D Modeling</a>
+          </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- #endregion -->
 
-    <!--#region Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="images/avatar_circle.png" alt="Logo" style="width:63px; padding-right: 1%;">
-            <a class="navbar-brand" href="#">Federico Jiménez</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#EpicNavbar" aria-controls="EpicNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="EpicNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--#endregion -->
-
-    <!-- #region Main -->
+    <!-- #region Contact Form -->
     <main class="container-fluid p-3 mt-3 mb-5">
-        <img src="images/pills.png" class="img-fluid mx-auto d-block" alt="Responsive image" width="512">
-        <h3 class="font-weight-bold text-capitalize mb-4 text-light mt-3">Contact Me</h3>
-        <form id="contact-form" method="post" action="https://formspree.io/f/mzbyrvkn" role="form">
-            <div class="messages"></div>
-            <div class="controls">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="text-light" for="form_name">Firstname *</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="text-light" for="form_lastname">Lastname *</label>
-                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="text-light" for="form_email">Email *</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="text-light" for="form_need">Please specify your need *</label>
-                            <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                                <option value=""></option>
-                                <option value="Request quotation">Request quotation</option>
-                                <option value="Request order status">Request order status</option>
-                                <option value="Request copy of an invoice">Request copy of an invoice</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="text-light" for="form_message">Message *</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send" value="Send message">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-light">
-                            <strong>*</strong> These fields are required.
-                        </p>
-                    </div>
-                </div>
+      <div>
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="text-light">Linkedin</h2>
+          </div>
+          <div class="col-md-6">
+            <a href="https://www.linkedin.com/in/fjimenez-1845/">
+              <button type="button" class="btn btn-primary btn-lg">
+                <i class="fa fa-link"></i> View Profile
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h3 class="font-weight-bold text-capitalize mb-4 text-light mt-3">
+        Contact Me
+      </h3>
+      <form
+        id="contact-form"
+        method="post"
+        action="https://formspree.io/f/mzbyrvkn"
+        role="form"
+      >
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="text-light" for="form_name">Firstname *</label>
+                <input
+                  id="form_name"
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Please enter your firstname *"
+                  required="required"
+                  data-error="Firstname is required."
+                />
+                <div class="help-block with-errors"></div>
+              </div>
             </div>
-        </form>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="text-light" for="form_lastname">Lastname *</label>
+                <input
+                  id="form_lastname"
+                  type="text"
+                  name="surname"
+                  class="form-control"
+                  placeholder="Please enter your lastname *"
+                  required="required"
+                  data-error="Lastname is required."
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="text-light" for="form_email">Email *</label>
+                <input
+                  id="form_email"
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Please enter your email *"
+                  required="required"
+                  data-error="Valid email is required."
+                />
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="text-light" for="form_need"
+                  >Please specify your need *</label
+                >
+                <select
+                  id="form_need"
+                  name="need"
+                  class="form-control"
+                  required="required"
+                  data-error="Please specify your need."
+                >
+                  <option value=""></option>
+                  <option value="Request quotation">Request quotation</option>
+                  <option value="Request order status">
+                    Request order status
+                  </option>
+                  <option value="Request copy of an invoice">
+                    Request copy of an invoice
+                  </option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label class="text-light" for="form_message">Message *</label>
+                <textarea
+                  id="form_message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Message for me *"
+                  rows="4"
+                  required="required"
+                  data-error="Please, leave us a message."
+                ></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+            <div class="col-md-12 pt-4">
+              <input
+                type="submit"
+                class="btn btn-success btn-send"
+                value="Send message"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 pt-3">
+              <p class="text-light">
+                <strong>*</strong> These fields are required.
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
     </main>
     <!-- #endregion -->
 
     <!-- #region Footer -->
     <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/heretic666erotic69prince420/" role="button"><i class="fab fa-facebook-f"></i
-    ></a>
-                <!-- Whatsapp -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=+525518106808" role="button"><i class="fab fa-whatsapp"></i
-    ></a>
-                <!-- Youtube -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCKI1PW6WyQlbNlKXbk2TkfQ" role="button"><i class="fab fa-youtube"></i
-    ></a>
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/swear_i_fckd_a_ghost/?hl=es-la" role="button"><i class="fab fa-instagram"></i
-    ></a>
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/fjimenez-1845/" role="button"><i class="fab fa-linkedin-in"></i
-    ></a>
-            </section>
-        </div>
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright: Wunderfritz Studios
-        </div>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.facebook.com/heretic666erotic69prince420/"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- Whatsapp -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://api.whatsapp.com/send?phone=+525518106808"
+            role="button"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <!-- Youtube -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.youtube.com/channel/UCKI1PW6WyQlbNlKXbk2TkfQ"
+            role="button"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/swear_i_fckd_a_ghost/?hl=es-la"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/fjimenez-1845/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright: Wunderfritz Studios
+      </div>
     </footer>
     <!-- #endregion -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/matrix.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-</body>
-
+  </body>
 </html>
