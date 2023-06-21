@@ -107,19 +107,6 @@
       </div>
     </nav>
     <!-- #endregion -->
-    <div class="row">
-      <model-viewer
-        alt="Avatar"
-        src="assets/customized_Anim.glb"
-        environment-image=""
-        poster=""
-        shadow-intensity="1"
-        style="height: 420px"
-        autoplay
-        animation-name="animation"
-        animation-loop
-      ></model-viewer>
-    </div>
 
     <!-- #region Contact Form -->
     <main class="container-fluid p-3 mt-3 mb-5">
@@ -140,6 +127,23 @@
       <h3 class="font-weight-bold text-capitalize mb-4 text-light mt-3">
         Contact Me
       </h3>
+      
+      <div class="row">
+        <model-viewer
+          alt="Avatar"
+          src="assets/customized_Anim.glb"
+          environment-image=""
+          poster=""
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+          style="height: 640px"
+          autoplay
+          animation-name="animation"
+          animation-loop
+        ></model-viewer>
+      </div>
+
       <form
         id="contact-form"
         method="post"
