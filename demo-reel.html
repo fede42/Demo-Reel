@@ -5,28 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Federico Jiménez</title>
     <link rel="icon" href="images/avatar.png" />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
-    <!-- Extra CSS -->
-    <link rel="stylesheet" href="css/extras.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <!-- Google Font -->
+
+    <!-- Preconnect for essential domains -->
+    <link rel="preconnect" href="https://use.fontawesome.com" />
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Font Awesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
+      rel="preload" 
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" 
+      as="style" onload="this.onload=null;this.rel='stylesheet'"
     />
+    
+    <!-- Bootstrap CSS -->
+    <link 
+      rel="preload" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" 
+      as="style" onload="this.onload=null;this.rel='stylesheet'" 
+    />
+
+    <!-- Extra CSS -->
+    <link rel="stylesheet" href="css/extras.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    
+    <!-- Google Font -->
+    <link 
+      rel="preload" 
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+      as="style" onload="this.onload=null;this.rel='stylesheet'" 
+    />
+
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -38,6 +48,7 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+
     <!-- Bootstrap JS -->
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
